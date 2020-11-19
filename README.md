@@ -1,1 +1,1 @@
-# background-effects
+# parallax-effect-JS
