@@ -3,38 +3,40 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Connection to the CSS stylesheet -->
+  <!-- Koppling till CSS -->
     <link rel="stylesheet" type="text/css" href="./style.css">
     <title>Parallax scrolling effect</title>
   </head>
 
   <body>
-  <!-- One div per time of day. We give them different class names to
-  be able to style them differently. The first div has an id as well.
-  We will use this id to get the element in to our JavaScript file. -->
+  <!-- En div per "tid på dagen". Vi ger dem olika klassnamn för att
+       kunna styla dem på olika sätt. Den första div:en har även ett
+       id. Detta är för att vi ska kunna använda den i bonusuppgiften
+       i JavaScript-filen. -->
 
     <div id="parallax" class="day">
-      <h1>Good Morning!☀️ Scroll down to reveal the Sunset!</h1>
+      <h1>God morgon!☀️ Scrolla ner för att visa soluppgången!</h1>
     </div>
 
     <div class="day-transition">
-      <h2>Parallax Scrolling Effect</h2>
+      <h2>Parallax Scroll-effekt</h2>
     </div>
 
     <div class="sunset">
-      <h3>Keep scrolling to reveal the night sky!✨</h3>
+      <h3>Fortsätt scrolla för att visa natthimlen!✨</h3>
     </div>
 
     <div class="nightsky">
-      <h4>Parallax Scrolling is a technique where the background content (i.e. an image) 
-          is moved at a different speed than the foreground content while scrolling. </h4>
+      <h4>Parallax Scroll är en teknik där bakgrundens innehåll (t.ex. en bild)
+        flyttar sig i en annan hastighet än innehållet i förgrunden när man scrollar. </h4>
     </div>
 
     <div class="night-transition">
-      <h5>Night Night!🌙</h5>
+      <h5>Godnatt!🌙</h5>
+      <p class="credits">Alla bilder kommer från www.freepik.com</p>
     </div>
 
-      <!-- Connection to our JavaScript file -->
+      <!-- Koppling till JavaScript-filen -->
     <script src="./script.js"></script>
   </body>
 </html>

@@ -1,4 +1,7 @@
-/* All the images used are from www.freepik.com*/
+/* Börja i denna fil! Först går vi igenom lite av koden
+som redan är skriven - sen går vi igenom uppgifterna. Det
+är helt okej att ändra på den existerande koden också, det
+är du som bestämmer! */
 
 body { 
   margin: 0;
@@ -7,18 +10,16 @@ body {
   font-family: "didot" sans-serif;
 }
 
-/* Flexbox to layout our page */
+/* Flexbox för sidans layout */
 div { 
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  height: 100vh; /* this is 100 viewport hwight and will allow our divs
-  to occupy the specified height (in this case 100%) of the visible
-  space (viewport) */
+  height: 100vh;
 }
 
-/* Styling of our headers*/
+/* Styling för våra rubriker*/
 h1 { 
   font-size: 50px;
   color: rgb(252, 252, 252);
@@ -69,44 +70,53 @@ h5 {
   border-radius: 16px;
 }
 
-/* Time to style our divs' backgrounds*/
+/* Styling för credits, längst ner på sidan */
+.credits {
+  color: white;
+  font-weight: normal;
+  position: absolute;
+  bottom: 0;
+}
 
-/* 1. To get you started, we gave the first div a background image
-called "daytime.png". Your assignment is to change the background-size
-so the image covers the whole div only once*/
+/* Nu är det dags att börja styla!*/
+
+/* 1. Vi har redan gett den första div:en en bakgrundsbild
+som heter 'daytime.png'. Din uppgift är att ändra på storleken
+så att bilden täcker hela div:en en gång utan upprepning!*/
 .day {
   background-image: url(./assets/daytime.png);
   background-size: 500px;
 }
 
-/* 2. The second div has a single background color right now. Try to
-create a linear gradient of yellow and blue so the transition is smoother.*/
+/* 2. Den andra div:en har en enkel bakgrundsfärg just nu.
+Skapa en linjär gradient som är gul upptill och blå nertill
+för att göra övergången till nästa div mjukare.*/
 .day-transition {
   background:  rgba(254,183,90,1);
 }
 
-/* 3. This third div should have both a background image and a linear
-gradient. You'll find the image "sunset.png" in the assets folder.
-Tip! If you give it the same gradient color as the previous div, the
-transition will become smoother.*/
+/* 3. Den tredje div:en ska både ha en bakgrundsbild och en
+linjär gradient. Det finns en bild som heter 'sunset.png' i
+'assets'-mappen. Hint! Om du ger den samma gradient-färg som
+den förra diven kommer övergången bli mjukare. Glöm inte att
+ge bilden en lämplig storlek!*/
 .sunset { 
-  /* Add your background image with gradient here */
-  /* Don't forget to give it a proper size */
+
 }
 
-
-/* 4. This fourth div should have a background image, "nightsky.png"
-which you'll find in the assets folder. Give it a proper size, and
-try to give it a simple parallax effect as well (the image should
-look like it's attached behind the other divs).
-Tip! Read up on background-attachment.*/
+/* Den fjärde div:en ska ha en bakgrundsbild som heter 'nightsky.png'.
+Ge den en lämplig storlek och en parallax-effekt! Bilden ska se ut som
+att den sitter fast bakom de andra div:arna!
+Hint! Läs på om background-attachment*/
 .nightsky {
-  /* Add your background image, size and background-attachment here */
+  
 }
 
-/* 5. Create another linear gradient with night colors for the last div*/
-/* Your'e done! 🙌 If you want to challenge yourself - take a look in the
-JavaScript file for more tasks */
+/* 5. Ändra bakgrundsfärgen till linjär gradient med natt-färger för den sista div:en.
+Du är färdig! 🥳 Om du vill utmana dig själv - ta en titt i JavaScript-filen
+för flera uppgifter! */
+
 .night-transition {
-  background: rgb(18,10,121); /* Change this to be a linear gradient */
+  position: relative; /*För att cred till freepik ska hamna i botten*/
+  background: rgb(18,10,121);
 }
